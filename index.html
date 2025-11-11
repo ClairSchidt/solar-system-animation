@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Solar System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Our Solar System</h1>
+        
+        <div class="controls">
+            <button id="pauseBtn" class="control-btn">Pause</button>
+            <button id="resumeBtn" class="control-btn" style="display: none;">Resume</button>
+        </div>
+        
+        <div class="solar-system">
+            <!-- Sun -->
+            <div class="sun"></div>
+            
+            <!-- Mercury -->
+            <div class="orbit orbit-mercury"></div>
+            <div class="planet planet-mercury" data-planet="mercury" data-distance="57.9 million km" data-period="88 days"></div>
+            <div class="planet-label label-mercury">Mercury</div>
+            
+            <!-- Venus -->
+            <div class="orbit orbit-venus"></div>
+            <div class="planet planet-venus" data-planet="venus" data-distance="108.2 million km" data-period="225 days"></div>
+            <div class="planet-label label-venus">Venus</div>
+            
+            <!-- Earth -->
+            <div class="orbit orbit-earth"></div>
+            <div class="planet planet-earth" data-planet="earth" data-distance="149.6 million km" data-period="365 days"></div>
+            <div class="planet-label label-earth">Earth</div>
+            
+            <!-- Mars -->
+            <div class="orbit orbit-mars"></div>
+            <div class="planet planet-mars" data-planet="mars" data-distance="227.9 million km" data-period="687 days"></div>
+            <div class="planet-label label-mars">Mars</div>
+            
+            <!-- Jupiter -->
+            <div class="orbit orbit-jupiter"></div>
+            <div class="planet planet-jupiter" data-planet="jupiter" data-distance="778.5 million km" data-period="12 years"></div>
+            <div class="planet-label label-jupiter">Jupiter</div>
+            
+            <!-- Saturn -->
+            <div class="orbit orbit-saturn"></div>
+            <div class="planet planet-saturn" data-planet="saturn" data-distance="1.43 billion km" data-period="29 years"></div>
+            <div class="planet-label label-saturn">Saturn</div>
+            
+            <!-- Uranus -->
+            <div class="orbit orbit-uranus"></div>
+            <div class="planet planet-uranus" data-planet="uranus" data-distance="2.87 billion km" data-period="84 years"></div>
+            <div class="planet-label label-uranus">Uranus</div>
+            
+            <!-- Neptune -->
+            <div class="orbit orbit-neptune"></div>
+            <div class="planet planet-neptune" data-planet="neptune" data-distance="4.5 billion km" data-period="165 years"></div>
+            <div class="planet-label label-neptune">Neptune</div>
+        </div>
+        
+        <div id="planetInfo" class="planet-info"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
